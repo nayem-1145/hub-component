@@ -100,7 +100,7 @@
     const countdownInterval = setInterval(updateCountdown, 1000);
 
 
-    $('.hbfonts-light-bulb, .hb_close').on('focus', function() {
+    $('.hbfonts-light-bulb, .hb_close').on('click', function() {
         $(this).addClass('focused');
     });
 

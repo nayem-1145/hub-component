@@ -153,9 +153,6 @@ h1, h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   gap: 0;
   padding-right: 12px;
   overflow: hidden; }
@@ -183,13 +180,11 @@ h1, h2, h3 {
       color: var(--color-yellow2); }
   .hub_component .hb_objective_content {
     background: #353540;
-    padding: 8px 16px 13px;
+    padding: 8px 16px 2px;
+    min-height: 91px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
     gap: 18px;
     width: 100%;
     -webkit-box-pack: justify;
@@ -219,9 +214,9 @@ h1, h2, h3 {
     opacity: 0; }
 
 .hb_object_checkbox {
-  -webkit-transform: translateY(8px);
-  -ms-transform: translateY(8px);
-  transform: translateY(8px); }
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
   .hb_object_checkbox label {
     font-size: 14px;
     color: #D9D9D9;
@@ -232,7 +227,7 @@ h1, h2, h3 {
     .hb_object_checkbox label span {
       width: 44px;
       height: 44px;
-      border: 1px solid var(--primary-color);
+      border: 1px solid #2563EB;
       background: transparent;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
@@ -259,7 +254,7 @@ h1, h2, h3 {
       opacity: 0;
       width: 0; }
       .hb_object_checkbox label input:checked ~ span {
-        background: var(--primary-color); }
+        background: #2563EB; }
         .hb_object_checkbox label input:checked ~ span svg path {
           stroke: var(--color-white); }
 
@@ -301,9 +296,10 @@ h1, h2, h3 {
     .hb_object_time .clock_icon img {
       width: 66px;
       padding: 0; }
-  .hb_object_time > p {
+  .hb_object_time p {
     font-size: 18px;
-    margin-top: 2px; }
+    margin-top: 2px;
+    color: var(--heading-color); }
 
 .hub_countdown {
   display: -webkit-inline-box;
@@ -344,7 +340,13 @@ h1, h2, h3 {
     font-size: 1.5vw; }
   .hb_lesson_time > p {
     font-size: 18px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: var(--heading-color); }
+
+.hb_close_btn {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
 
 .hb_close {
   width: 2vw;
@@ -599,10 +601,8 @@ h1, h2, h3 {
     height: 56px;
     font-size: 34px; }
   .hub_component .hb_objective_content {
-    padding: 5px 10px 4px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    padding: 2px 10px 2px;
+    min-height: 40px; }
     .hub_component .hb_objective_content h3 {
       font-size: 1.15vw; }
     .hub_component .hb_objective_content p {
@@ -719,6 +719,10 @@ h1, h2, h3 {
   .hub_component .hb_objective_content p {
     font-size: 18px; } }
 
+@media (max-width: 1400px) {
+  .hub_component .hb_objective_content h3 {
+    font-size: 16px; } }
+
 @media (max-width: 1366px) {
   .hb_lesson_time .hub_countdown li {
     font-size: 1.5vw; }
@@ -747,11 +751,9 @@ h1, h2, h3 {
     -ms-flex-align: initial;
     align-items: initial; }
     .hub_component .hb_objective_content h3 {
-      font-size: 1.7vw; }
+      font-size: 16px; }
     .hub_component .hb_objective_content p {
       font-size: 12px; }
-    .hub_component .hb_object_time {
-      min-width: 195px; }
     .hub_component .hb_objective_content {
       padding: 4px 10px 2px; }
     .hub_component .hbfonts-light-bulb {
@@ -760,7 +762,7 @@ h1, h2, h3 {
       font-size: 32px; }
     .hub_component .hb_lesson_time > p,
     .hub_component .hb_object_timer p {
-      font-size: 1.1vw; }
+      font-size: 10px; }
   #stopwatch {
     margin: 0;
     width: 45px;
