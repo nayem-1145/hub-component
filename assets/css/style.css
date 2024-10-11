@@ -674,7 +674,7 @@ h1, h2, h3 {
       animation-iteration-count: infinite; }
     #stopwatch .ring {
       position: absolute;
-      top: 8.2px;
+      top: 7px;
       left: 7.2px;
       border: 3px solid var(--color-black);
       width: 37.23px;
