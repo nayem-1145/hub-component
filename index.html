@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Component</title>
+
+    <!--external stylesheet-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/tobby-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="live_class_screen position-relative z-1">
+
+            <!--hub component start-->
+            <div class="hub_component loading">
+                <a href="#" class="hbfonts-light-bulb">
+                    <i class="icon-bulb"></i>
+                </a>
+                <div class="hb_objective_content">
+                    <div class="hb_objective_cntFrst">
+                        <h3>Objective (1/<small>5</small>): <mark>Welcome Class</mark></h3>
+                        <p class="mb-0">Be sure to check that each student is in attendance and give a brief summary of the lesson.</p>
+                    </div>
+                    <div class="hb_object_checkbox">
+                        <label>
+                            <input type="checkbox">
+                            <span>
+                                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.44434 8.00003L7.55545 14.1111L19.7777 1.88892" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span><br>
+                            Done
+                        </label>
+                    </div>
+                </div>
+                <div class="hb_object_time d-flex align-items-center">
+                    <span class="clock_icon">
+                        <div id="stopwatch" class="stopwElement" data-progress="600s">
+                            <div class="switch"></div>
+                            <div class="pie pie1"></div>
+                            <div class="pie pie2"></div>
+                            <div class="ring"></div>
+                        </div>
+                    </span>
+                    <div class="gap-2 align-items-start hb_object_timer">
+                        <ul class="hub_countdown">
+                            <li class="minutes">49</li>
+                            <li class="seperator">:</li>
+                            <li class="seconds">01</li>
+                        </ul>
+                        <p class="mb-0 text-start">Objective time</p>
+                    </div>
+                </div>
+                <div class="hb_lesson_time">
+                    <div class="d-flex gap-2 align-items-center">
+                        <span class="clock_icon">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 22.75C18.3848 22.75 22.75 18.3848 22.75 13C22.75 7.61522 18.3848 3.25 13 3.25C7.61522 3.25 3.25 7.61522 3.25 13C3.25 18.3848 7.61522 22.75 13 22.75Z" stroke="#342E59" stroke-width="2" stroke-miterlimit="10" />
+                                <path d="M13 7.3125V13H18.6875" stroke="#342E59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <ul class="hub_countdown countdown" data-date='10/30/2024 22:30:59'>
+                            <li class="minutes">49</li>
+                            <li class="seperator">:</li>
+                            <li class="seconds">23</li>
+                        </ul>
+                    </div>
+                    <p class="mb-0 text-center">Total lesson time</p>
+                </div>
+                <div class="hb_close_btn">
+                    <button class="hb_close">
+                        <i class="hbfonts-times"></i>
+                    </button></div>
+            </div>
+            <!--hub component end-->
+
+        </div>
+
+    </main>
+
+
+    <!--essential scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>
