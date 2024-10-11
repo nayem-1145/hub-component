@@ -637,8 +637,8 @@ $size: 83px;
     .pie2:before {
         -webkit-transform: rotate(1turn);
         transform: rotate(1turn);
-        -webkit-animation: spin2 calc($lapTime / 2) linear infinite, temperature $lapTime linear;
-        animation: spin2 calc($lapTime / 2) linear infinite, temperature $lapTime linear;
+        -webkit-animation: spin2 calc(var(--lapTime)/ 2) linear infinite, temperature $lapTime linear;
+        animation: spin2 calc(var(--lapTime)/ 2) linear infinite, temperature $lapTime linear;
 
         @if $infiniteLoop==true {
             -webkit-animation-iteration-count: infinite;
