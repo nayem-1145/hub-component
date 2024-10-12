@@ -1,26 +1,18 @@
-(function ($) {
+(function () {
 
+    // skeleton loader
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.querySelectorAll(".loading").forEach(function (el) {
+                el.classList.add("off");
+            });
 
-
-    //skeleton loader
-    $(window).on("load", function(){
-        setTimeout(function(){
-            $(".loading").addClass("off");
-            setTimeout(function(){
-                $(".loading").addClass("hide_element");
-            }, 1000); 
-        
+            setTimeout(function () {
+                document.querySelectorAll(".loading").forEach(function (el) {
+                    el.classList.add("hide_element");
+                });
+            }, 1000);
         }, 1500);
-    });
-
-    // slider component
-    $(".lv_auto_slider").slick({
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 700,
-        arrows: false,
-        fade: true,
     });
 
     //hub countdown timer
@@ -31,11 +23,7 @@
         });
     });
 
-
-
-
-   
-    // Image Lazy Load 
+    // Image Lazy Load
     document.addEventListener("DOMContentLoaded", function () {
         let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
@@ -57,26 +45,20 @@
         }
     });
 
-
-
-    //stopwatch functionality
+    // stopwatch functionality
     document.querySelectorAll('.stopwElement').forEach(function (element) {
         const fontSize = element.getAttribute('data-progress');
         element.style.setProperty('--lapTime', fontSize);
     });
 
+    // stopwatch timer
+    let time = 10 * 60 * 1000; // Starting time (10 minutes in milliseconds)
 
-    //stopwatch timer
-    
-    // Set the starting time (10 minutes in milliseconds)
-    let time = 10 * 60 * 1000;
-
-    // Function to update the countdown display
     function updateCountdown() {
         const countdownElement = document.querySelector('.hub_countdown');
         const minutesElement = countdownElement.querySelector('.minutes');
         const secondsElement = countdownElement.querySelector('.seconds');
-        
+
         // Calculate minutes and seconds
         let minutes = Math.floor(time / (1000 * 60));
         let seconds = Math.floor((time % (1000 * 60)) / 1000);
@@ -84,10 +66,10 @@
         // Display the minutes and seconds, pad with zero if needed
         minutesElement.textContent = minutes.toString().padStart(2, '0');
         secondsElement.textContent = seconds.toString().padStart(2, '0');
-        
+
         // Decrease the time
         time -= 1000;
-        
+
         // Stop the countdown when time reaches 0
         if (time < 0) {
             clearInterval(countdownInterval);
@@ -96,31 +78,27 @@
         }
     }
 
-    // Update countdown every second
     const countdownInterval = setInterval(updateCountdown, 1000);
 
-
-    $('.hbfonts-light-bulb, .hb_close').on('click', function() {
-        $(this).addClass('focused');
+    // Event handler for clicking the light bulb and close buttons
+    document.querySelectorAll('.hbfonts-light-bulb, .hb_close').forEach(function (element) {
+        element.addEventListener('click', function () {
+            this.classList.add('focused');
+        });
     });
 
-    $(document).on('click', function(event) {
-        if (!$(event.target).closest('.hbfonts-light-bulb').length) {
-            $('.hbfonts-light-bulb').removeClass('focused');
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.hbfonts-light-bulb')) {
+            document.querySelectorAll('.hbfonts-light-bulb').forEach(function (el) {
+                el.classList.remove('focused');
+            });
+        }
+
+        if (!event.target.closest('.hb_close')) {
+            document.querySelectorAll('.hb_close').forEach(function (el) {
+                el.classList.remove('focused');
+            });
         }
     });
 
-    $(document).on('click', function(event) {
-        if (!$(event.target).closest('.hb_close').length) {
-            $('.hb_close').removeClass('focused');
-        }
-    });
-    
-
-    
-
-
-
-
-
-})(jQuery)
+})();

@@ -1,12 +1,7 @@
-/** 
-Live class styles 
-version: 1.0.0
-**/
-/** colors variables **/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/** fonts **/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
+/** variables **/
 :root {
   --primary-color: #4F73FB;
   --color-white: #ffffff;
@@ -21,7 +16,6 @@ version: 1.0.0
   --primary-font: "Poppins", system-ui;
 }
 
-/* essential fonts **/
 /** typography **/
 body {
   padding: 0;
@@ -56,7 +50,6 @@ h3 {
   top: 110px;
   left: 0;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -68,7 +61,6 @@ h3 {
   top: 10vw;
   right: 0;
   -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
   transform: translateX(50%);
 }
 
@@ -82,7 +74,6 @@ h3 {
   left: 40%;
   bottom: 0;
   -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   width: 12vw;
 }
@@ -103,7 +94,6 @@ h3 {
   left: 129px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 2.5vw;
 }
@@ -112,7 +102,6 @@ h3 {
   right: 160px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 8vw;
 }
@@ -160,7 +149,6 @@ h3 {
   z-index: 500;
   opacity: 1;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -172,8 +160,6 @@ h3 {
   width: 40%;
   height: 100%;
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0));
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.2)), color-stop(40%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0));
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0));
   z-index: 1000;
   opacity: 1;
@@ -219,7 +205,6 @@ h3 {
   font-size: 63px;
   color: var(--heading-color);
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -276,8 +261,6 @@ h3 {
 }
 
 .hb_object_checkbox {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -308,7 +291,6 @@ h3 {
   border-radius: 4px;
   margin-left: -4px;
   -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
   transition: 0.1s;
   margin-bottom: 4px;
 }
@@ -316,7 +298,6 @@ h3 {
 .hb_object_checkbox label span svg path {
   stroke: transparent;
   -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
   transition: 0.1s;
 }
 
@@ -338,7 +319,6 @@ h3 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -ms-flex-item-align: end;
-  -ms-grid-row-align: center;
   align-self: center;
   padding-bottom: 0;
   position: relative;
@@ -409,7 +389,6 @@ h3 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -ms-flex-item-align: end;
-  -ms-grid-row-align: end;
   align-self: end;
   position: relative;
   margin-right: 13px;
@@ -442,8 +421,6 @@ h3 {
 }
 
 .hb_close_btn {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -453,7 +430,6 @@ h3 {
   background: var(--heading-color);
   color: var(--color-white);
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 50%;
   -ms-flex-negative: 0;
@@ -462,14 +438,8 @@ h3 {
   align-self: center;
   border: 0;
   left: .5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -535,7 +505,6 @@ h3 {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -558,7 +527,6 @@ h3 {
   background: var(--btn-color);
   text-decoration: none;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -595,7 +563,6 @@ h3 {
   height: 64.74px;
   border-radius: 50%;
   z-index: 500;
-  -webkit-box-shadow: inset 0 0 1px 0 var(--color-black);
   box-shadow: inset 0 0 1px 0 var(--color-black);
 }
 
@@ -616,25 +583,20 @@ h3 {
   height: 100%;
   border-radius: 0 100% 100% 0 / 50%;
   -webkit-transform-origin: left;
-  -ms-transform-origin: left;
   transform-origin: left;
 }
 
 #stopwatch .pie1 {
   z-index: 10;
   -webkit-transform: rotate(1turn);
-  -ms-transform: rotate(1turn);
   transform: rotate(1turn);
   background-image: -webkit-linear-gradient(right, transprent 50%, #3822F1 0);
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, transprent), color-stop(0, #3822F1));
-  background-image: -o-linear-gradient(right, transprent 50%, #3822F1 0);
   background-image: linear-gradient(to left, transprent 50%, #3822F1 0);
 }
 
 #stopwatch .pie1:before {
   background-color: var(--color-black);
   -webkit-transform: rotate(1turn);
-  -ms-transform: rotate(1turn);
   transform: rotate(1turn);
   -webkit-animation: spin1 calc(var(--lapTime) / 2) linear;
   animation: spin1 calc(var(--lapTime) / 2) linear;
@@ -645,11 +607,8 @@ h3 {
 #stopwatch .pie2 {
   z-index: 0;
   -webkit-transform: rotate(1turn);
-  -ms-transform: rotate(1turn);
   transform: rotate(1turn);
   background-image: -webkit-linear-gradient(right, transparent 50%, var(--color-black) 0);
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(0, var(--color-black)));
-  background-image: -o-linear-gradient(right, transparent 50%, var(--color-black) 0);
   background-image: linear-gradient(to left, transparent 50%, var(--color-black) 0);
   -webkit-animation: altitude var(--lapTime) step-end, temperature var(--lapTime) linear;
   animation: altitude var(--lapTime) step-end, temperature var(--lapTime) linear;
@@ -659,7 +618,6 @@ h3 {
 
 #stopwatch .pie2:before {
   -webkit-transform: rotate(1turn);
-  -ms-transform: rotate(1turn);
   transform: rotate(1turn);
   -webkit-animation: spin2 calc(var(--lapTime)/ 2) linear infinite, temperature var(--lapTime) linear;
   animation: spin2 calc(var(--lapTime)/ 2) linear infinite, temperature var(--lapTime) linear;
@@ -796,7 +754,6 @@ h3 {
   .hub_component .hb_objective_content p {
     font-size: 0.84vw;
     overflow: hidden;
-    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     line-height: 1.2;
   }
@@ -826,7 +783,6 @@ h3 {
 
   .hb_object_checkbox label span svg {
     -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
     transform: scale(0.8);
   }
 
@@ -873,7 +829,6 @@ h3 {
 
   .hb_object_checkbox {
     -webkit-transform: translateY(1px);
-    -ms-transform: translateY(1px);
     transform: translateY(1px);
   }
 
@@ -907,7 +862,6 @@ h3 {
     border: 3px solid var(--color-black);
     width: 37.23px;
     height: 37.23px;
-    -webkit-box-shadow: inset 0 0 1.2px 0 var(--color-black);
     box-shadow: inset 0 0 1.2px 0 var(--color-black);
   }
 
@@ -999,14 +953,8 @@ h3 {
   .hb_close {
     width: 24px;
     height: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -1017,8 +965,6 @@ h3 {
 
 @media (max-width: 1199px) {
   .hub_component {
-    -webkit-box-align: initial;
-    -ms-flex-align: initial;
     align-items: initial;
   }
 
@@ -1070,7 +1016,6 @@ h3 {
     border: 2px solid var(--color-black);
     width: 33.75px;
     height: 33.75px;
-    -webkit-box-shadow: inset 0 0 1.2px 0 var(--color-black);
     box-shadow: inset 0 0 1.2px 0 var(--color-black);
   }
 
@@ -1152,13 +1097,8 @@ h3 {
 
 @media (max-width: 767px) {
   .hub_component {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-right: 0;
   }
@@ -1188,7 +1128,6 @@ h3 {
 
   .hb_object_checkbox {
     -webkit-transform: translateY(3px);
-    -ms-transform: translateY(3px);
     transform: translateY(3px);
   }
 
@@ -1199,8 +1138,6 @@ h3 {
   }
 
   .hb_lesson_time>div {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
